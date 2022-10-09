@@ -1,5 +1,5 @@
 import "./Home.css";
-
+import {Link} from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -18,7 +18,7 @@ const Home = () => {
         </div>
 
         <div className="home-container-btn">
-      
+          <Link to = '/work'><button>check my work</button></Link>
         </div>
       </div>
     </>
