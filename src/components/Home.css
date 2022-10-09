@@ -28,16 +28,18 @@
   margin-top: 20px;
 }
 
-.home-container .home-container-btn > a {
+.home-container .home-container-btn button {
   padding: 10px 20px;
-  font: 15px 400;
+  font-size: 16px;
   color: #e21717;
   border: 1px solid #e21717;
   background-color: black;
   text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
-.home-container .home-container-btn > a:hover {
+.home-container .home-container-btn button:hover {
   color: #1d1d1d;
   background-color: #e21717;
   transition: all 0.3s ease-in-out;
