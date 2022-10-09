@@ -1,6 +1,7 @@
 import "./App.css";
 import Header from "./components/Header";
 import Home from "./components/Home";
+import Work from "./components/Work";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -17,8 +18,23 @@ function App() {
               </>
             }
           />
-          <Route path="blog" element = {<><Header /></>} />
-          <Route path="work" element = {<><Header /></>} />
+          <Route
+            path="blog"
+            element={
+              <>
+                <Header />
+              </>
+            }
+          />
+          <Route
+            path="work"
+            element={
+              <>
+                <Header />
+                <Work />
+              </>
+            }
+          />
         </Routes>
       </Router>
     </div>
