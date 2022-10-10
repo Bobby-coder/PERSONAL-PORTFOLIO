@@ -1,27 +1,27 @@
 import "./Project.css";
 
-const Project = () => {
+const Project = ({title, liveLink, githubLink, imgSrc}) => {
   return (
     <>
       <div className="project-wrapper">
         
         <div className="screenshot">
-          <img src="/images/rode-clone.webp" alt="project-1" />
+          <img src={imgSrc} alt="project-1" />
         </div>
 
         <div className="title">
-          <p>RODE UI clone</p>
+          <p>{title}</p>
         </div>
 
         <div className="live-link">
-          <a href="https://rode-web.netlify.app" target="_blank">
+          <a href={liveLink} target="_blank">
             LIVE SITE
           </a>
         </div>
 
         <div className="github-link">
           <a
-            href="https://github.com/Bobby-coder/RODE-UI-CLONE"
+            href= {githubLink}
             target="_blank"
           >
             <img
