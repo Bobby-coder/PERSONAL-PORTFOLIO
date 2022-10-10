@@ -5,11 +5,13 @@ import projectApi from './projectApi';
 const Work = () =>{
     return(
         <>
+        <div className='work-container'>
         {
             projectApi.map(currObj =>{
                 return <Project title={currObj.title} liveLink={currObj.liveLink} githubLink={currObj.githubLink} imgSrc = {currObj.imgSrc}/>
             })
         }
+        </div>
         </>
     )
 }
