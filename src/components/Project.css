@@ -5,10 +5,6 @@
     gap: 10px;
   }
 
-  .project-wrapper .screenshot{
-    width: 515px;
-  }
-
   .project-wrapper .screenshot > img{
     width: 100%;
     object-fit: contain;
@@ -44,4 +40,21 @@
 
   .project-wrapper .github-link .git-icon{
     height: 35px;
+  }
+
+
+  @media only screen and (min-width:320px) and (max-width:400px){
+
+    .project-wrapper .live-link > a{
+      font-size: 15px;
+    }
+
+    .project-wrapper .title > p{
+      font-size: 15px;
+    }
+
+    .git-icon{
+      transform: scale(0.8);
+    }
+  
   }
