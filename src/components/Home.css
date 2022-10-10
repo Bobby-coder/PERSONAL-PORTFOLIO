@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+  margin-top: 12vh;
 }
 
 .home-container .home-container-heading > h1 {
