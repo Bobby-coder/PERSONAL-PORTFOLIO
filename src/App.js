@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Work from "./components/Work";
+import BlogWrapper from "./components/BlogWrapper"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             element={
               <>
                 <Header />
+                <BlogWrapper />
               </>
             }
           />
