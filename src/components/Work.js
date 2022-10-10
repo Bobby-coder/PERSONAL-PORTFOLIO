@@ -4,7 +4,7 @@ import projectApi from './projectApi';
 
 const Work = () =>{
     return(
-        <>gi
+        <>
         <div className='work-container'>
         {
             projectApi.map(currObj =>{
