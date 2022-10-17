@@ -1,6 +1,6 @@
 const blogApi = [
     {
-        title: 'JAVASCRIPT ARRAY AND ITS METHODS',
+        title: 'JAVASCRIPT ARRAYS',
         liveLink: 'https://bobby-sadhwani.hashnode.dev/javascript-array-handbook',
         hashnodeLink: 'https://bobby-sadhwani.hashnode.dev',
         imgSrc: '/images/blog-1.webp'
