@@ -22,38 +22,61 @@
 
   .project-wrapper .title > p{
     font-size: 20px;
+    line-height: 20px;
     color: #eee;
     text-align: center;
     text-transform: capitalize;
     letter-spacing: 1px;
+    font-weight: 500;
   }
 
   .project-wrapper .live-link > a{
     text-decoration: none;
     text-align: center;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 18px;
     letter-spacing: 2px;
     color: #eee;
+    font-weight: 300;
   }
 
   .project-wrapper .github-link .git-icon{
-    height: 35px;
+    height: 30px;
   }
 
 
   @media only screen and (min-width:320px) and (max-width:400px){
 
+    .project-wrapper{
+      gap: 5px;
+    }
+
     .project-wrapper .live-link > a{
-      font-size: 15px;
+      font-size: 13px;
     }
 
     .project-wrapper .title > p{
       font-size: 15px;
+      line-height: 15px;
     }
 
     .git-icon{
       transform: scale(0.8);
     }
+
+    .project-wrapper .github-link .git-icon{
+      height: 25px;
+    }
   
+  }
+
+  @media only screen and (min-width:401px) and (max-width:500px){
+
+    .project-wrapper .live-link > a{
+      font-size: 16px;
+    }
+
+    .project-wrapper .title > p{
+      font-size: 18px;
+      line-height: 18px;
+    } 
   }
