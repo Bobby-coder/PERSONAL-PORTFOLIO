@@ -1,11 +1,25 @@
 import "./Header.css";
+import { useState } from "react";
 import {Link} from 'react-router-dom';
 
 function Header() {
+  const [toggle, setToggle] = useState(false);
+
+  const addClass = () => {
+    return(
+      setToggle(true)
+    )
+  }
+
+  const removeClass = () => {
+    return(
+      setToggle(false)
+    )
+  }
 
   return (
     <>
-      <div className="nav">
+      <div className={toggle ? 'nav active' : 'nav'}>
         <Link to = '/'>
           <img
             className="nav-logo"
@@ -14,18 +28,18 @@ function Header() {
           />
         </Link>
         <div className="nav-list">
-          <button className="cross">
+          <button className="cross" onClick={removeClass}>
             <img src="/images/cross.svg" alt=""></img>
           </button>
 
           <ul>
-            <li className="list-item">
+            <li className="list-item" onClick={removeClass}>
               <Link to = '/'>home</Link>
             </li>
-            <li className="list-item">
+            <li className="list-item" onClick={removeClass}>
               <Link to= '/blog'>blog</Link>
             </li>
-            <li className="list-item">
+            <li className="list-item" onClick={removeClass}>
               <Link to = '/work'>work</Link>
             </li>
             <li className="list-item">
@@ -118,7 +132,7 @@ function Header() {
             </a>
           </div>
         </div>
-        <button className="display">
+        <button className="display" onClick={addClass}>
           <img src="/images/menu.svg" alt="" className="menu-icon"></img>
         </button>
       </div>
