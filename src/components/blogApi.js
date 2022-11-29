@@ -3,7 +3,7 @@ const blogApi = [
         title: 'JAVASCRIPT ARRAYS',
         liveLink: 'https://bobby-sadhwani.hashnode.dev/javascript-array-handbook',
         hashnodeLink: 'https://bobby-sadhwani.hashnode.dev',
-        imgSrc: '/images/blog-1.webp'
+        imgSrc: '/images/blog-1.png'
     },
 
     {
