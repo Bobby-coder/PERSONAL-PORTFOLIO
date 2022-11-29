@@ -1,26 +1,22 @@
 import "./Header.css";
 import { useState } from "react";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function Header() {
   const [toggle, setToggle] = useState(false);
 
   const addClass = () => {
-    return(
-      setToggle(true)
-    )
-  }
+    return setToggle(true);
+  };
 
   const removeClass = () => {
-    return(
-      setToggle(false)
-    )
-  }
+    return setToggle(false);
+  };
 
   return (
     <>
-      <div className={toggle ? 'nav active' : 'nav'}>
-        <Link to = '/'>
+      <div className={toggle ? "nav active" : "nav"}>
+        <Link to="/">
           <img
             className="nav-logo"
             src="/images/logo_transparent.png"
@@ -33,24 +29,30 @@ function Header() {
           </button>
 
           <ul>
+            <Link to="/">
+              <li className="list-item" onClick={removeClass}>
+                home
+              </li>
+            </Link>
+            <Link to="/blog">
             <li className="list-item" onClick={removeClass}>
-              <Link to = '/'>home</Link>
+              blog
             </li>
+            </Link>
+            <Link to="/work">
             <li className="list-item" onClick={removeClass}>
-              <Link to= '/blog'>blog</Link>
+              work
             </li>
-            <li className="list-item" onClick={removeClass}>
-              <Link to = '/work'>work</Link>
-            </li>
-            <li className="list-item">
-              <a
+            </Link>
+            <a
                 id="contact"
                 href="https://www.linkedin.com/in/bobby-sadhwani/"
                 target="_blank"
               >
+            <li className="list-item">
                 Contact
-              </a>
             </li>
+            </a>
           </ul>
 
           <div className="nav-icons">
