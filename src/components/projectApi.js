@@ -1,5 +1,12 @@
 const projectApi = [
     {
+        title: 'CRYPTO SPY',
+        liveLink: "https://crypto-spy.netlify.app",
+        githubLink: "https://github.com/Bobby-coder/CRYPTO-SPY",
+        imgSrc: `/images/crypto-spy.png`
+    },
+
+    {
         title: 'AMAZON CLONE',
         liveLink: "https://clone-ff7af.web.app",
         githubLink: "https://github.com/Bobby-coder/Amazon-Clone",
@@ -32,14 +39,7 @@ const projectApi = [
         liveLink: "https://shopify-web.netlify.app",
         githubLink: "https://github.com/Bobby-coder/SHOPIFY-UI-CLONE",
         imgSrc: `/images/shopify-clone.png`
-    },
-
-    {
-        title: 'VISUAL DESIGNER PORTFOLIO',
-        liveLink: "https://product-design-webpage.netlify.app",
-        githubLink: "https://github.com/Bobby-coder/VISUAL-DESIGN-LANDING-PAGE",
-        imgSrc: `/images/Project-15.png`
-    },
+    }
 ]
 
 export default projectApi;
