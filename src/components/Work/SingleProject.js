@@ -1,6 +1,6 @@
-import "./Project.css";
+import "../../styles/work/SingleProject.css";
 
-const Project = ({title, liveLink, githubLink, imgSrc}) => {
+const SingleProject = ({title, liveLink, githubLink, imgSrc}) => {
   return (
     <>
       <div className="project-wrapper">
@@ -37,4 +37,4 @@ const Project = ({title, liveLink, githubLink, imgSrc}) => {
   );
 };
 
-export default Project;
+export default SingleProject;

@@ -1,8 +1,7 @@
-import "./App.css";
 import Header from "./components/Header";
-import Home from "./components/Home";
-import Work from "./components/Work";
-import BlogWrapper from "./components/BlogWrapper"
+import HomePage from "./pages/HomePage";
+import WorkPage from "./pages/WorkPage";
+import BlogPage from "./pages/BlogPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -15,7 +14,7 @@ function App() {
             element={
               <>
                 <Header />
-                <Home />
+                <HomePage />
               </>
             }
           />
@@ -24,7 +23,7 @@ function App() {
             element={
               <>
                 <Header />
-                <BlogWrapper />
+                <BlogPage />
               </>
             }
           />
@@ -33,7 +32,7 @@ function App() {
             element={
               <>
                 <Header />
-                <Work />
+                <WorkPage />
               </>
             }
           />

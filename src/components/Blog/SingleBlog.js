@@ -1,6 +1,6 @@
-import './Blog.css'
+import '../../styles/blog/SingleBlog.css'
 
-const Blog = ({imgSrc, title, liveLink, hashnodeLink}) =>{
+const SingleBlog = ({imgSrc, title, liveLink, hashnodeLink}) =>{
     return(
         <>
         <div className="blog">
@@ -37,4 +37,4 @@ const Blog = ({imgSrc, title, liveLink, hashnodeLink}) =>{
     )
 }
 
-export default Blog;
+export default SingleBlog;
